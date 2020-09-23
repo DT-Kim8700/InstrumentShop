@@ -8,7 +8,7 @@ namespace App.Models.Entity
 {
     public class Part
     {
-        public enum EKinds
+        public enum EPartKinds 
         {
             현,
             활,
@@ -20,9 +20,6 @@ namespace App.Models.Entity
         public int PartNumber { get; set; }
 
         [Required]
-        public EKinds Kinds { get; set; }
-
-        [Required]
-        public int GoodsNumber { get; set; }
+        public EPartKinds PartKinds { get; set; }
     }
 }

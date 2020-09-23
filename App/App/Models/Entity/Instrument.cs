@@ -8,7 +8,7 @@ namespace App.Models.Entity
 {
     public class Instrument
     {
-        public enum EKinds
+        public enum EInstrumentKinds
         {
             피아노,
             바이올린,
@@ -23,10 +23,7 @@ namespace App.Models.Entity
         public int InsNumber { get; set; }
 
         [Required]
-        public EKinds Kinds { get; set; }
-
-        [Required]
-        public int GoodsNumber { get; set; }
+        public EInstrumentKinds InstrumentKinds { get; set; }
 
     }
 }

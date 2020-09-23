@@ -27,7 +27,7 @@ namespace App.Models.Entity
         public EStatus Status { get; set; }
 
         [Required]
-        public int Id { get; set; }
+        public string AccountId { get; set; }
     }
 
     public partial class Order
