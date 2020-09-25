@@ -30,6 +30,12 @@ namespace App.Models.Entity
         public int GoodsNumber { get; set; }
 
         [Required]
+        public string GoodsName { get; set; }
+
+        [Required]
+        public string brand { get; set; }
+
+        [Required]
         public EKinds Kinds { get; set; }
 
         [Required]

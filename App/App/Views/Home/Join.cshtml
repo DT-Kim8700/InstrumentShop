@@ -1,75 +1,56 @@
 ﻿@model JoinViewModel
+
 @{
-    Layout = null;
     ViewData["Title"] = "회원가입";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-</head>
-<body>
-    <header>
-        <a asp-area="" asp-controller="Home" asp-action="Index"><h1 class="display-1">RubyInstrument</h1></a>
-    </header>
-    <br />
-    <hr/>
-    <div class="container main">
-        <main role="main" class="pb-3">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <h2 class="text-center">@ViewData["Title"]</h2>
-                    <hr />
-                    <form method="post" class="form-horizontal">
-                        <div asp-validation-summary="All" class="text-danger"></div>
-                        <div class="form-group">
-                            <input asp-for="AccountId" class="form-control" placeholder="아이디"/>
-                            <span asp-validation-for="AccountId" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <input asp-for="Password" class="form-control" placeholder="비밀번호"/>
-                            <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <input asp-for="ConfirmPassword" class="form-control" placeholder="비밀번호 확인"/>
-                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <input asp-for="Name" class="form-control" placeholder="이름"/>
-                            <span asp-validation-for="Name" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <select asp-for="Gender" class="form-control">
-                                <option value="남">남</option>
-                                <option value="여">여</option>
-                            </select>
-                            <span asp-validation-for="Gender" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <input asp-for="Email" class="form-control" placeholder="Email"/>
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <input asp-for="Address" class="form-control" placeholder="주소"/>
-                            <span asp-validation-for="Address" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <input asp-for="PhoneNumber" class="form-control" placeholder="핸드폰 번호"/>
-                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-                        </div>
-                        <br />
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-info form-control">등록</button>
-                        </div>
-                    </form>
-                </div>
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <br />
+        <h2 class="text-center">@ViewData["Title"]</h2>
+        <hr />
+        <form method="post" class="form-horizontal">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="AccountId" class="form-control" placeholder="아이디" />
+                <span asp-validation-for="AccountId" class="text-danger"></span>
             </div>
-        </main>
+            <div class="form-group">
+                <input asp-for="Password" class="form-control" placeholder="비밀번호" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="ConfirmPassword" class="form-control" placeholder="비밀번호 확인" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Name" class="form-control" placeholder="이름" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="Gender" class="form-control">
+                    <option value="남">남</option>
+                    <option value="여">여</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Address" class="form-control" placeholder="주소" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="PhoneNumber" class="form-control" placeholder="핸드폰 번호" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <button type="submit" class="btn btn-info form-control">등록</button>
+            </div>
+        </form>
     </div>
-</body>
-</html>
+</div>

@@ -153,7 +153,6 @@ C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\ru\Micr
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Home\Join.cshtml.g.cs
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\EntityFramework.dll
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\System.CodeDom.dll
@@ -163,3 +162,4 @@ C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\runtime
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.csproj.CoreCompileInputs.cache
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Home\Join.cshtml.g.cs

@@ -22,7 +22,6 @@ namespace App.Data
             _roleManager = roleManager;
         }
 
-
         public async Task SeedDatabase()
         {
             //if (!_context.AccountUsers.Any())    // Teachers 테이블에 데이터가 없을 때 초기 값 설정. 테이블에 데이터가 있다면 반영되지 않는다.

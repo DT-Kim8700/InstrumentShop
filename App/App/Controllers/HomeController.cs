@@ -44,7 +44,7 @@ namespace App.Controllers
                 var user = new AccountUser
                 {
                     AccountId = model.AccountId,
-                    UserName = model.Email,
+                    UserName = model.AccountId,
                     Name = model.Name,
                     Gender = model.Gender,
                     Email = model.Email,
@@ -58,20 +58,27 @@ namespace App.Controllers
                     return RedirectToAction("Index");       // 회원 가입 성공시 메인 페이지로 이동
                 }
 
-                ModelState.AddModelError("", "회원가입 실패");
             }
+
+            ModelState.AddModelError("", "회원가입 실패");
 
             return View(model);     // 회원 가입 실패시
         }
 
+
         // 로그인
+        public IActionResult Login()
+        {
+            return View();
+        }
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Index(LoginViewModel model)
+        public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
+                var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
 
                 if (result.Succeeded)
                 {
