@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App.Models.Entity.Interface;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Models.Entity
 {
-    public class Instrument
+    public class Instrument : IGoodsItem
     {
         public enum EInstrumentKinds
         {
@@ -24,6 +25,9 @@ namespace App.Models.Entity
 
         [Required]
         public EInstrumentKinds InstrumentKinds { get; set; }
+
+        [Required]
+        public int GoodsNumber { get; set; }
 
     }
 }

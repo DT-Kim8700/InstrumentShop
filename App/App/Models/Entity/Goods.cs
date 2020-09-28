@@ -33,7 +33,7 @@ namespace App.Models.Entity
         public string GoodsName { get; set; }
 
         [Required]
-        public string brand { get; set; }
+        public string Brand { get; set; }
 
         [Required]
         public EKinds Kinds { get; set; }
@@ -45,24 +45,24 @@ namespace App.Models.Entity
         public int Stock { get; set; }
 
         [Required]
-        public EManufacturer Manufacturer { get; set; }
+        public string ImgSrc { get; set; }
 
-        
+
     }
 
-    public partial class Goods
-    {
-        [ForeignKey("GoodsNumber")]
-        public virtual ICollection<OrderItem> OrderItems { get; set; }
+    //public partial class Goods
+    //{
+    //    [ForeignKey("GoodsNumber")]
+    //    public virtual ICollection<OrderItem> OrderItems { get; set; }
 
-        [ForeignKey("GoodsNumber")]
-        public virtual ICollection<Instrument> Instruments { get; set; }
+    //    [ForeignKey("GoodsNumber")]
+    //    public virtual ICollection<Instrument> Instruments { get; set; }
 
-        [ForeignKey("GoodsNumber")]
-        public virtual ICollection<Part> Parts { get; set; }
+    //    [ForeignKey("GoodsNumber")]
+    //    public virtual ICollection<Part> Parts { get; set; }
 
-        [ForeignKey("GoodsNumber")]
-        public virtual ICollection<Ect> Ects { get; set; }
-    }
+    //    [ForeignKey("GoodsNumber")]
+    //    public virtual ICollection<Ect> Ects { get; set; }
+    //}
 }
 

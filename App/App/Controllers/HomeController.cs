@@ -8,6 +8,8 @@ using App.Models;
 using App.Models.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using App.Models.Entity;
+using App.Repository.Interface;
+using App.Service;
 
 namespace App.Controllers
 {

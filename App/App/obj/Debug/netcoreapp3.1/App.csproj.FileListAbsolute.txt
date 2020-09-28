@@ -1,4 +1,3 @@
-C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.csprojAssemblyReference.cache
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.AssemblyInfoInputs.cache
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.AssemblyInfo.cs
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.RazorAssemblyInfo.cache
@@ -34,7 +33,6 @@ C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.dll
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.pdb
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.genruntimeconfig.cache
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.csproj.CopyComplete
-C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Goods\InstrumentList.cshtml.g.cs
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Goods\PartList.cshtml.g.cs
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Goods\EctList.cshtml.g.cs
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
@@ -163,3 +161,8 @@ C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\bin\Debug\netcoreapp3.1\Microso
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.csproj.CoreCompileInputs.cache
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Home\Join.cshtml.g.cs
+C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\App.csprojAssemblyReference.cache
+C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Goods\WindList.cshtml.g.cs
+C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Goods\StringList.cshtml.g.cs
+C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Goods\PianoList.cshtml.g.cs
+C:\Users\hiper\Desktop\C#\InstrumentShop\App\App\obj\Debug\netcoreapp3.1\Razor\Views\Goods\InstrumentInfo.cshtml.g.cs

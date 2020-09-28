@@ -115,12 +115,10 @@ namespace App.Migrations
                     b.Property<int>("EctKinds")
                         .HasColumnType("int");
 
-                    b.Property<int?>("GoodsNumber")
+                    b.Property<int>("GoodsNumber")
                         .HasColumnType("int");
 
                     b.HasKey("EctNumber");
-
-                    b.HasIndex("GoodsNumber");
 
                     b.ToTable("Ects");
                 });
@@ -132,14 +130,19 @@ namespace App.Migrations
                         .HasColumnType("int")
                         .HasDefaultValueSql("NEXT VALUE FOR shared.GoodsNumberSequence");
 
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("GoodsName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Kinds")
-                        .HasColumnType("int");
+                    b.Property<string>("ImgSrc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Manufacturer")
+                    b.Property<int>("Kinds")
                         .HasColumnType("int");
 
                     b.Property<int>("Price")
@@ -147,10 +150,6 @@ namespace App.Migrations
 
                     b.Property<int>("Stock")
                         .HasColumnType("int");
-
-                    b.Property<string>("brand")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("GoodsNumber");
 
@@ -164,15 +163,13 @@ namespace App.Migrations
                         .HasColumnType("int")
                         .HasDefaultValueSql("NEXT VALUE FOR shared.InsNumberSequence");
 
-                    b.Property<int?>("GoodsNumber")
+                    b.Property<int>("GoodsNumber")
                         .HasColumnType("int");
 
                     b.Property<int>("InstrumentKinds")
                         .HasColumnType("int");
 
                     b.HasKey("InsNumber");
-
-                    b.HasIndex("GoodsNumber");
 
                     b.ToTable("Instruments");
                 });
@@ -216,8 +213,6 @@ namespace App.Migrations
 
                     b.HasKey("ItemNumber");
 
-                    b.HasIndex("GoodsNumber");
-
                     b.HasIndex("OrderNumber");
 
                     b.ToTable("OrderItems");
@@ -230,15 +225,13 @@ namespace App.Migrations
                         .HasColumnType("int")
                         .HasDefaultValueSql("NEXT VALUE FOR shared.PartNumberSequence");
 
-                    b.Property<int?>("GoodsNumber")
+                    b.Property<int>("GoodsNumber")
                         .HasColumnType("int");
 
                     b.Property<int>("PartKinds")
                         .HasColumnType("int");
 
                     b.HasKey("PartNumber");
-
-                    b.HasIndex("GoodsNumber");
 
                     b.ToTable("Parts");
                 });
@@ -374,20 +367,6 @@ namespace App.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("App.Models.Entity.Ect", b =>
-                {
-                    b.HasOne("App.Models.Entity.Goods", null)
-                        .WithMany("Ects")
-                        .HasForeignKey("GoodsNumber");
-                });
-
-            modelBuilder.Entity("App.Models.Entity.Instrument", b =>
-                {
-                    b.HasOne("App.Models.Entity.Goods", null)
-                        .WithMany("Instruments")
-                        .HasForeignKey("GoodsNumber");
-                });
-
             modelBuilder.Entity("App.Models.Entity.Order", b =>
                 {
                     b.HasOne("App.Models.Entity.AccountUser", null)
@@ -399,24 +378,11 @@ namespace App.Migrations
 
             modelBuilder.Entity("App.Models.Entity.OrderItem", b =>
                 {
-                    b.HasOne("App.Models.Entity.Goods", null)
-                        .WithMany("OrderItems")
-                        .HasForeignKey("GoodsNumber")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("App.Models.Entity.Order", null)
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderNumber")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("App.Models.Entity.Part", b =>
-                {
-                    b.HasOne("App.Models.Entity.Goods", null)
-                        .WithMany("Parts")
-                        .HasForeignKey("GoodsNumber");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

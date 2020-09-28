@@ -1,0 +1,23 @@
+﻿@model IEnumerable<InstrumentViewModel>
+
+@{
+    ViewData["Title"] = "관악기";
+}
+
+<h1 class="title">@ViewData["Title"]</h1>
+
+<div class="row instrumentList">
+    @foreach (InstrumentViewModel i in Model)
+    {
+        <div class="col-md-3">
+            <a class="nav-link text-dark mr-3" asp-controller="Goods" asp-action="InstrumentInfo" asp-route-id="@i.GoodsNumber">
+                <img class="instrumentImg" src=@i.ImgSrc />
+                <ul>
+                    <li>@i.GoodsName</li>
+                    <li>@i.Brand</li>
+                    <li>@i.Price 원</li>
+                </ul>
+            </a>
+        </div>
+    }
+</div>

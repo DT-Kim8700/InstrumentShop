@@ -1,0 +1,27 @@
+﻿@model InstrumentViewModel
+
+@{
+    ViewData["Title"] = "상세정보 페이지";
+}
+
+<h1 class="title">@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-5">
+        <img src=@Model.ImgSrc />
+    </div>
+    <div class="col-md-7 align-items-center">
+        <ul>
+            <li><h2>@Model.GoodsName</h2><br /></li>
+            <li><h4>가격: @Model.Price 원</h4><br /></li>
+            <li><h4>제조사: @Model.Brand</h4><br /></li>
+            <li>
+                <form method="post" action="">
+                    <input type="hidden" asp-for=UserName value=@User.Identity.Name/>
+                    <input type="hidden" asp-for=GoodsNumber value=@Model.GoodsNumber/>
+                    <button type="submit" class="btn btn-info form-control w-50">결제하기</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>

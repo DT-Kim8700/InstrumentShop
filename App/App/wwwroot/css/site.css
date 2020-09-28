@@ -71,19 +71,41 @@ header {
     text-align: center;
 }
 
+
 nav {
     margin-top: 30px;
     background-color: #f6f6f6;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
+    height: 60px;
 }
 
-.nav-item{
+.nav-item {
+    width: 100px;
+    padding-top: 5px;
+    height: 60px;
     margin-right: 1em;
 }
 
 .nav-item:hover {
     cursor: pointer;
+}
+
+.nav-item > li:hover {
+    background-color: blanchedalmond;
+}
+
+.nav-item> li {
+    list-style: none;
+    padding: 0;
+}
+
+.hidden-menu {
+    margin-top: 8px;
+    display: none;
+    background-color: #f6f6f6;
+    padding: 1px;
+    overflow:visible
 }
 
 /* main */
@@ -94,8 +116,9 @@ nav {
 }
 
 
-footer {
+.footer {
     width: 100%;
+    margin-top: 100px;
 }
 
 footer > .container {
@@ -119,7 +142,7 @@ a:hover {
 
 /* home - index */
 #ImgContainer {
-    width: 960px;
+    width: 60%;
     border: 10px solid white;
     overflow: hidden;
     margin: 30px auto;
@@ -142,4 +165,18 @@ a:hover {
 .move {
     transition-duration: 1s;
     margin-left: -100%;
+}
+
+
+/* Goods */
+.title {
+    margin: 50px auto;
+}
+
+.instrumentImg {
+    width: 100%;
+}
+
+.instrumentList li{
+    font-size: 14px;
 }

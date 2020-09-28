@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using App.Data;
 using App.Models.Entity;
+using App.Repository;
 using App.Repository.Interface;
+using App.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -41,6 +43,12 @@ namespace App
 
             services.AddTransient<DBSeeder>();      // AddTransient: 필요할 때마다 생성되고 데이터가 캐시내에 머물지 않는다.
             services.AddScoped<IHomeRepository, HomeRepository>();
+            services.AddScoped<IGoodsRepository, GoodsRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+
+            services.AddScoped<IGoodsService, GoodsService>();
+            services.AddScoped<IOrderService, OrderService>();
+
 
             services.AddControllersWithViews();
         }
@@ -74,7 +82,7 @@ namespace App
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //seeder.SeedDatabase().Wait();
+            seeder.SeedDatabase().Wait();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App.Models.Entity.Interface;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Models.Entity
 {
-    public class Ect
+    public class Ect : IGoodsItem
     {
         public enum EEctKinds
         {
@@ -20,5 +21,8 @@ namespace App.Models.Entity
 
         [Required]
         public EEctKinds EctKinds { get; set; }
+
+        [Required]
+        public int GoodsNumber { get; set; }
     }
 }
